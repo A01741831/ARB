@@ -22,17 +22,30 @@ struct MyNodeBST
 
 class MyBST{
     private:
-        int size;
-        MyNodeBST *root;
+        int size; //
+        MyNodeBST *root; //
+        bool search(int data, MyNodeBST *current); //
+        void preorder(MyNodeBST *current);
+        void inorder(MyNodeBST *current);
+        void postorder(MyNodeBST *current);
+        int height(MyNodeBST* node);
     public:
         MyBST();
-        int length();
-        bool isEmpty();
-        bool search(int data);
-        bool searchRec(int data,MyNodeBST *current);
-        bool searchRec(int data);
-        bool insert(int data);
+        int length(); //
+        bool isEmpty(); //
+        bool search(int data); //
+        bool searchRec(int data,MyNodeBST *current); //
+        bool searchRec(int data); //
+        bool insert(int data); 
         bool remove(int data);
+        void preorder();
+        void inorder();
+        void postorder();
+        void level();
+        void visit(int type);
+        int height();
+        void ancestors(int data);
+        int whatLevelAmI(int data);
 };
 
 
