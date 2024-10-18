@@ -1,0 +1,3 @@
+#include "MyBS.h"
+
+main
